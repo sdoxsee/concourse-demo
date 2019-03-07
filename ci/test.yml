@@ -1,0 +1,19 @@
+---
+platform: linux
+
+image_resource:
+  type: registry-image
+  source: {repository: azul/zulu-openjdk:8}
+
+inputs:
+- name: blog
+
+#caches:
+#- path: gopath/
+
+params:
+#  COVERALLS_TOKEN:
+  GIT_BRANCH: master
+
+run:
+  path: blog-001/ci/test
