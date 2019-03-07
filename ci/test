@@ -23,4 +23,5 @@ cd concourse-demo
 #
 #echo "running tests..."
 #./scripts/test -p "$@"
+echo "running tests..."
 ../mvnw test
