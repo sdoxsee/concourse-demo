@@ -6,7 +6,7 @@ image_resource:
   source: {repository: azul/zulu-openjdk:8}
 
 inputs:
-- name: blog
+- name: concourse-demo
 
 #caches:
 #- path: gopath/
@@ -16,4 +16,4 @@ params:
   GIT_BRANCH: master
 
 run:
-  path: blog-001/ci/test
+  path: concourse-demo/ci/test
